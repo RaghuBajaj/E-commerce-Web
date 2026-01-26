@@ -1,0 +1,122 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== Navbar Container ===== */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90deg, #0f172a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Logo Section ===== */
+.logo_nav {
+  display: flex;
+  align-items: center;
+}
+
+.img_nav {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* ===== Menu List ===== */
+.list_nav {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* ===== Menu Items ===== */
+.item_nav {
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  padding: 6px 2px;
+  transition: color 0.3s ease;
+}
+
+.item_nav:hover {
+  color: #38bdf8;
+}
+
+/* underline animation */
+.item_nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.item_nav:hover::after {
+  width: 100%;
+}
+
+/* ===== Right Side ===== */
+.side_nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== Login Button ===== */
+.login_nav {
+  color: #0f172a;
+  background-color: #38bdf8;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login_nav:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-1px);
+}
+
+/* ===== Cart Icon ===== */
+.cart_nav {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  filter: invert(1);
+  transition: transform 0.2s ease;
+}
+
+.cart_nav:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .list_nav {
+    gap: 15px;
+  }
+
+  .item_nav {
+    font-size: 14px;
+  }
+}
