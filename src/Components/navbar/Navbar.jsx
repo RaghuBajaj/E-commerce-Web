@@ -1,10 +1,11 @@
-import React from 'react'
-import { useContext } from 'react'
-import { ItemContext } from '../../Context'
+import { useEffect, useContext } from 'react'
+import { ItemContext } from '../../Context.jsx';
 import './Navbar.css'
+import cart_icon from '../../Frontend_Assets/cart_icon.png';
 
 const Navbar = () => {
-    const { navigate } = useContext(ItemContext); 
+    const { navigate, user, setUser } = useContext(ItemContext); 
+    useEffect(()=>{},[])
   return (
     <div className='navbar'>
         <div className='logo_nav'>
@@ -17,8 +18,9 @@ const Navbar = () => {
             <li className='item_nav' onClick={() => navigate('/kids')}>Kids</li>
         </ul>
         <div className='side_nav'>
-            <div className='login_nav' onClick={() => navigate('/login')} >login</div>
-            <img className='cart_nav' onClick={() => navigate('/cart')} alt="cart" />
+            {user === null && <div className='login_nav' onClick={() => navigate('/login')} >login</div>}
+            {user !== null && <div className='login_nav' onClick={() => {navigate('/login'); setUser(null)}} >Logout</div>}
+            <img className='cart_nav' onClick={() => navigate('/cart')} src={cart_icon} alt="cart" />
         </div>
     </div>
   )

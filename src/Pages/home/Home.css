@@ -1,0 +1,135 @@
+/* ===== Page Wrapper ===== */
+.home {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  .home-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: linear-gradient(to right, #f9fafb, #eef2ff);
+  }
+  
+  .hero-content {
+    max-width: 500px;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 20px;
+  }
+  
+  .hero-button {
+    padding: 12px 24px;
+    background-color: #111827;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #1f2937;
+  }
+  
+  .hero-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image {
+    width: 350px;
+    max-width: 100%;
+  }
+  
+  /* ===== POPULAR SECTION ===== */
+  .home-popular {
+    padding: 40px 60px;
+    background-color: #f9fafb;
+  }
+  
+  /* ===== OFFER SECTION ===== */
+  .home-offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: linear-gradient(to right, #fff7ed, #ffedd5);
+  }
+  
+  .offer-content {
+    max-width: 500px;
+  }
+  
+  .offer-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #7c2d12;
+    margin-bottom: 10px;
+  }
+  
+  .offer-subtitle {
+    font-size: 14px;
+    color: #9a3412;
+    margin-bottom: 20px;
+  }
+  
+  .offer-button {
+    padding: 12px 24px;
+    background-color: #7c2d12;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .offer-button:hover {
+    background-color: #9a3412;
+  }
+  
+  .offer-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .offer-image {
+    width: 320px;
+    max-width: 100%;
+  }
+  
+  /* ===== NEW COLLECTIONS ===== */
+  .home-new-collections {
+    padding: 40px 60px;
+    background-color: #ffffff;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .home-hero,
+    .home-offer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image,
+    .offer-image {
+      margin-top: 20px;
+    }
+  }
+  

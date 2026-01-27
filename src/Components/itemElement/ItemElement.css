@@ -1,0 +1,71 @@
+/* ===== Card Wrapper ===== */
+.item-card {
+    width: 230px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+  }
+  
+  .item-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ===== Image Section ===== */
+  .item-image-wrapper {
+    width: 100%;
+    height: 210px;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 12px;
+  }
+  
+  /* ===== Info Section ===== */
+  .item-info {
+    padding: 14px 16px;
+  }
+  
+  /* ===== Product Name ===== */
+  .item-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    height: 42px;
+    overflow: hidden;
+  }
+  
+  /* ===== Prices ===== */
+  .item-prices {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Old price (strike-through) */
+  .item-old-price {
+    font-size: 13px;
+    color: #9ca3af;
+    text-decoration: line-through;
+  }
+  
+  /* New price */
+  .item-new-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #16a34a;
+  }
+  
