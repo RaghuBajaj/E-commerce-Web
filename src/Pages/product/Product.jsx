@@ -3,12 +3,10 @@ import { ItemContext } from '../../Context.jsx';
 import './Product.css';
 
 const Product = () => {
-    const { product, user, setUser } = useContext(ItemContext);
+    const { product, addToCart, reduceItemFromCart } = useContext(ItemContext);
     if(!product) return null;
-    const { name, category, image, old_price, new_price } = product;
-    const addToCart = () => {
-      console.log("add to cart is called!")
-    }
+    const { id, name, category, image, old_price, new_price } = product;
+  
   return (
     <main className='product-page'>
       <section className='product-wrapper'>
@@ -34,7 +32,7 @@ const Product = () => {
             </div>
 
             <p className='product-description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia id ipsa cum.</p>
-            <button className='product-add-btn' onClick={() => addToCart()}>ADD TO CART</button>
+            <button className='product-add-btn' onClick={() => addToCart(id)}>ADD TO CART</button>
             <div className='product-meta'>
                 <span>Category: {category}</span>
                 <span>Tags: #{category}</span>

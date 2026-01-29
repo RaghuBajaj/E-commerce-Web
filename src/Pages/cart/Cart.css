@@ -1,0 +1,158 @@
+.cart-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding: 40px 80px;
+  background-color: #f2f3f5; /* light grey page bg */
+  min-height: 100vh;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= TABLE SECTION ================= */
+
+.cart-table-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table thead {
+  background-color: #f5f5f5;
+}
+
+.cart-table th {
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+  color: #111;
+}
+
+.cart-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  color: #333;
+}
+
+.cart-img {
+  width: 70px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Remove button */
+.remove-btn {
+  cursor: pointer;
+  color: #c0392b;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.remove-btn:hover {
+  color: #e74c3c;
+}
+
+/* ================= SUMMARY SECTION ================= */
+
+.cart-summary-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cart-summary {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  border: 1px solid #ddd;
+}
+
+.cart-summary h2 {
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.total-row {
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 2px solid #ccc;
+  padding-top: 10px;
+}
+
+/* Checkout button */
+.checkout-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #333;
+}
+
+/* ================= PROMO SECTION ================= */
+
+.promo-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.promo-section h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.promo-box {
+  display: flex;
+  gap: 0;
+}
+
+.promo-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #111;
+  background-color: #fafafa;
+}
+
+.promo-box button {
+  padding: 10px 18px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.promo-box button:hover {
+  background-color: #333;
+}
