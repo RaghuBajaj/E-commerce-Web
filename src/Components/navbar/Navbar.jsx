@@ -1,5 +1,5 @@
 import { useEffect, useContext } from 'react'
-import { ItemContext } from '../../Context.jsx';
+import { ItemContext } from '../../Context/Context.jsx';
 import './Navbar.css'
 import cart_icon from '../../Frontend_Assets/cart_icon.png';
 

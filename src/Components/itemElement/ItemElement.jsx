@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ItemContext } from '../../Context.jsx';
+import { ItemContext } from '../../Context/Context.jsx';
 import "./ItemElement.css";
 
 const ItemElement = ({item}) => {
